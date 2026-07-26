@@ -5,7 +5,7 @@ import Link from 'next/link';
 export const Footer = () => {
   return (
     <footer className="bg-background pt-16 pb-8 px-8 border-t border-border">
-      <div className="max-w-[1200px] mx-auto">
+      <div className="max-w-300 mx-auto">
         <div className="grid grid-cols-[2fr_1fr_1.5fr_1fr] max-lg:grid-cols-2 max-sm:grid-cols-1 gap-12 mb-16">
           
           <div>
@@ -13,7 +13,7 @@ export const Footer = () => {
               <Image src="/images/logo.png" alt="Nafs Bakery Logo" width={32} height={32} className="rounded" />
               <span className="font-serif text-xl font-bold text-secondary">Nafs Bakery</span>
             </div>
-            <p className="text-muted text-[0.9rem] leading-relaxed mb-6 max-w-[250px]">
+            <p className="text-muted text-[0.9rem] leading-relaxed mb-6 max-w-62.5">
               Creating moments of daily indulgence through the art of artisanal baking.
             </p>
             <div className="flex gap-3">

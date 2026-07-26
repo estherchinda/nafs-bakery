@@ -21,7 +21,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
   
   return (
     <div className="bg-white rounded-xl overflow-hidden shadow-[0_4px_15px_rgba(0,0,0,0.05)] flex flex-col transition-transform duration-200 hover:-translate-y-1 group h-full">
-      <div className="relative w-full aspect-[4/3] overflow-hidden">
+      <div className="relative w-full aspect-4/3 overflow-hidden">
         <Image
           src={product.image}
           alt={product.title}
@@ -51,7 +51,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
 export const SmallProductCard: React.FC<ProductCardProps> = ({ product }) => {
   return (
     <div className="bg-white rounded-xl overflow-hidden shadow-[0_2px_10px_rgba(0,0,0,0.03)] flex flex-col h-full">
-      <div className="relative w-full aspect-[4/3]">
+      <div className="relative w-full aspect-4/3">
         <Image
           src={product.image}
           alt={product.title}
@@ -63,7 +63,7 @@ export const SmallProductCard: React.FC<ProductCardProps> = ({ product }) => {
       <div className="p-4 flex flex-col flex-1">
         <h4 className="text-[1.05rem] font-sans text-secondary font-bold mb-1">{product.title}</h4>
         <p className="text-[0.85rem] text-muted mb-4 flex-1">{product.description}</p>
-        <Button variant="primary" className="w-full py-2 !px-0">Add to Tray</Button>
+        <Button variant="primary" className="w-full py-2 px-0!">Add to Tray</Button>
       </div>
     </div>
   );

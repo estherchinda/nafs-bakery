@@ -23,8 +23,8 @@ const REVIEWS = [
 
 export const Testimonials = () => {
   return (
-    <section className="py-20 px-8 bg-[#FDF9E6]/70">
-      <div className="max-w-[1200px] mx-auto">
+    <section className="py-20 px-8 bg-background/70">
+      <div className="max-w-300 mx-auto">
         <h2 className="text-center text-4xl mb-12 font-serif font-bold text-secondary">Sweet Words from Clients</h2>
         
         <div className="grid grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1 gap-8">

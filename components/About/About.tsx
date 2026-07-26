@@ -4,15 +4,15 @@ import Image from 'next/image';
 export const About = () => {
   return (
     <section className="py-24 px-8 bg-background" id="about">
-      <div className="max-w-[1200px] mx-auto grid grid-cols-2 max-lg:grid-cols-1 gap-16 items-center">
-        <div className="relative w-full aspect-[4/5] max-lg:aspect-video rounded-3xl overflow-hidden">
+      <div className="max-w-300 mx-auto grid grid-cols-2 max-lg:grid-cols-1 gap-16 items-center">
+        <div className="relative w-full aspect-4/5 max-lg:aspect-video rounded-3xl overflow-hidden">
           <Image 
             src="/images/about-section.png" 
             alt="Baker decorating cake" 
             fill 
             className="object-cover"
           />
-          <div className="absolute bottom-0 left-0 w-full p-8 bg-gradient-to-t from-black/70 to-transparent text-white font-serif italic text-[1.1rem]">
+          <div className="absolute bottom-0 left-0 w-full p-8 bg-linear-to-t from-black/70 to-transparent text-white font-serif italic text-[1.1rem]">
             &quot;Baking isn&apos;t just a job, it&apos;s a love language we share with our city.&quot;
           </div>
         </div>

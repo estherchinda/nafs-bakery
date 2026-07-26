@@ -35,7 +35,7 @@ const BEST_SELLERS: Product[] = [
 export const DailyBestSellers = () => {
   return (
     <section className="py-16 px-8 bg-background/50" id="bestsellers">
-      <div className="max-w-[1200px] mx-auto">
+      <div className="max-w-300 mx-auto">
         <div className="flex justify-between items-end mb-8">
           <div>
             <h2 className="text-3xl mb-1 font-serif font-bold text-secondary">Daily Best Sellers</h2>

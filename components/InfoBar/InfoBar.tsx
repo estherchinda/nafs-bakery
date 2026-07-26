@@ -3,7 +3,7 @@ import React from 'react';
 export const InfoBar = () => {
   return (
     <div className="bg-background py-4 border-b border-border">
-      <div className="max-w-[1200px] mx-auto px-8 flex justify-center md:justify-between items-center flex-wrap gap-4">
+      <div className="max-w-300 mx-auto px-8 flex justify-center md:justify-between items-center flex-wrap gap-4">
         <div className="flex items-center gap-2 text-[0.9rem] text-secondary">
           <span className="text-[1.1rem]">🕒</span>
           <span>Open today: 9am - 8pm</span>

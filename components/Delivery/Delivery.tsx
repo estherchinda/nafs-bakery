@@ -2,8 +2,8 @@ import React from 'react';
 
 export const Delivery = () => {
   return (
-    <section className="py-20 px-8 bg-[#FDF9E6]/70 border-b border-border">
-      <div className="max-w-[1000px] mx-auto">
+    <section className="py-20 px-8 bg-background/70 border-b border-border">
+      <div className="max-w-250 mx-auto">
         <h2 className="text-center text-4xl mb-16 font-serif font-bold text-secondary">Getting Your Treats</h2>
         
         <div className="grid grid-cols-3 max-md:grid-cols-1 gap-12 text-center">

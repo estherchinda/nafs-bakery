@@ -4,12 +4,12 @@ import { Button } from '../Button/Button';
 export const CustomOrder = () => {
   return (
     <section className="py-16 px-8 bg-background flex justify-center" id="custom-orders">
-      <div className="w-full max-w-[800px]">
+      <div className="w-full max-w-200">
         <div className="bg-transparent border-2 border-dashed border-border rounded-2xl p-12 relative max-md:p-8 max-sm:p-4">
           <div className="flex justify-between items-start mb-8">
             <div className="text-center flex-1">
               <h2 className="text-3xl mb-2 font-serif font-bold text-secondary">Need a Custom cake?</h2>
-              <p className="text-muted text-[0.95rem] max-w-[400px] mx-auto">
+              <p className="text-muted text-[0.95rem] max-w-100 mx-auto">
                 Fill in the details below and our lead baker will get back to you with a custom quote.
               </p>
             </div>

@@ -6,7 +6,7 @@ export const Hero = () => {
   return (
     <section className="relative min-h-[80vh] md:min-h-screen flex items-center pt-40 md:pt-32 px-8 pb-16 overflow-hidden">
       <div className="absolute top-0 left-0 w-full h-full -z-10">
-        <div className="absolute top-0 left-0 w-full h-full bg-linear-to-b md:bg-linear-to-r from-overlay/95 via-overlay/80 to-overlay/0 md:via-background/70 z-10"></div>
+        <div className="absolute top-0 left-0 w-full h-full bg-linear-to-b md:bg-linear-to-r from-overlay/75 via-overlay/60 to-overlay/0 md:via-background/70 z-10"></div>
         <Image
           src="/images/nafs-hero.png"
           alt="Fresh Cakes and Treats"

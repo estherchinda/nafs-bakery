@@ -5,19 +5,19 @@ const REVIEWS = [
     id: 1,
     text: "The best Red Velvet I've ever had in Lagos. The frosting was perfect - not too sweet, just right. Nafs is my go-to for every birthday!",
     name: "Chioma A.",
-    location: "Lekki, Lagos"
+    location: "Wuse, Abuja"
   },
   {
     id: 2,
     text: "I ordered a custom wedding cake and it exceeded all expectations. It was the center of attention and tasted even better than it looked!",
     name: "Tunde O.",
-    location: "Ikeja, Lagos"
+    location: "Gwangwalada, Abuja"
   },
   {
     id: 3,
     text: "Their small chops tray was the highlight of our office party. Super fresh, crispy, and delivered right on time. Highly recommended!",
     name: "Sarah M.",
-    location: "Victoria Island"
+    location: "FCT Abuja"
   }
 ];
 

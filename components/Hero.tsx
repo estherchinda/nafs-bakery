@@ -22,7 +22,7 @@ export const Hero = () => {
         </h1>
         <p className="text-base sm:text-[1.1rem] text-secondary/90 mb-10 max-w-125">
           Handcrafted with love using the finest ingredients. Every bite is a
-          journey into artisanal excellence and pure indulgence.
+          journey into artistic excellence and pure indulgence.
         </p>
         <div className="flex flex-col sm:flex-row items-center md:items-start gap-4 w-full sm:w-auto">
           <Button
@@ -38,7 +38,9 @@ export const Hero = () => {
             }>
             Order on WhatsApp
           </Button>
-          <Button variant='outline' className="w-full sm:w-auto">View Menu</Button>
+          <Button variant="outline" className="w-full sm:w-auto">
+            View Menu
+          </Button>
         </div>
       </div>
     </section>

@@ -17,7 +17,7 @@ export const Header = () => {
   };
 
   return (
-    <header className="w-full py-4 md:py-6 left-0 bg-overlay sticky top-0 z-50">
+    <header className="w-full py-4 md:py-6 left-0 bg-transparent absolute top-0 z-30">
       <div className="max-w-300 mx-auto px-4 md:px-8 flex items-center justify-between">
         <Link href={"/"} className="flex items-center gap-3">
           <Image src="/images/logo.png" alt="Nafs Bakery Logo" width={40} height={40} className="rounded" />

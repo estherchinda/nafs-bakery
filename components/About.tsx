@@ -19,7 +19,7 @@ export const About = () => {
         </div>
         
         <div className="flex flex-col">
-          <h2 className="text-3xl md:text-4xl mb-8 md:mb-10 font-serif font-bold text-secondary">Why Choose Nafs?</h2>
+          <h2 className="text-3xl md:text-4xl mb-8 md:mb-10 font-serif font-bold text-secondary">Why Choose Nafs Bakery?</h2>
           
           <div className="flex flex-col gap-8">
             <div className="flex gap-6 items-start">
@@ -37,7 +37,7 @@ export const About = () => {
                 <Palette/>
               </div>
               <div>
-                <h3 className="font-sans text-[1.1rem] mb-2 font-bold text-black">Artisanal Design</h3>
+                <h3 className="font-sans text-[1.1rem] mb-2 font-bold text-black">Artistic Design</h3>
                 <p className="text-muted text-[0.95rem] leading-relaxed">Every cake is a unique masterpiece, custom-designed to tell your story and match your theme perfectly.</p>
               </div>
             </div>
@@ -47,8 +47,8 @@ export const About = () => {
                 <BadgeCheck/>
               </div>
               <div>
-                <h3 className="font-sans text-[1.1rem] mb-2 font-bold text-black">Trusted Since 2018</h3>
-                <p className="text-muted text-[0.95rem] leading-relaxed">Over 5,000 celebrations sweetened across Lagos with consistent quality and timely delivery.</p>
+                <h3 className="font-sans text-[1.1rem] mb-2 font-bold text-black">Trusted Brand</h3>
+                <p className="text-muted text-[0.95rem] leading-relaxed">Over 5,000 celebrations sweetened across Abuja with consistent quality and timely delivery.</p>
               </div>
             </div>
           </div>

@@ -9,7 +9,7 @@ interface CategoryTabsProps {
 export const CategoryTabs: React.FC<CategoryTabsProps> = ({ categories, activeCategory, onSelectCategory }) => {
   return (
     <div className="flex justify-center py-8 overflow-x-auto">
-      <div className="flex gap-4 px-4">
+      <div className="flex flex-wrap gap-4 px-4">
         {categories.map((category) => (
           <button
             key={category}

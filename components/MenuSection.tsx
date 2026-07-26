@@ -45,6 +45,7 @@ export const MenuSection = () => {
   return (
     <section className="py-12 md:py-8 px-4 md:px-8 pb-16 bg-background" id="menu">
       <div className="max-w-300 mx-auto">
+        <h2 className="text-secondary text-center text-2xl mt-8">We have a large array of</h2>
         <CategoryTabs 
           categories={CATEGORIES} 
           activeCategory={activeCategory} 

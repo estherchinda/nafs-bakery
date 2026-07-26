@@ -20,7 +20,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
   const isLarge = product.size === "large";
 
   return (
-    <div className="bg-white rounded-xl overflow-hidden shadow-[0_4px_15px_rgba(0,0,0,0.05)] flex flex-col transition-transform duration-200 hover:-translate-y-1 group h-full">
+    <div className="bg-white rounded-xl overflow-hidden shadow-[0_4px_15px_rgba(0,0,0,0.05)] flex flex-col transition-transform duration-200 hover:-translate-y-1 group h-100">
       <div className="relative w-full aspect-4/3 overflow-hidden">
         <Image
           src={product.image}
@@ -34,7 +34,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
           }
         />
         {product.badge && (
-          <div className="absolute bottom-4 left-4 bg-white px-3 py-1 rounded text-[0.8rem] font-medium text-secondary">
+          <div className="absolute bottom-4 left-4 bg-white px-3 py-1 rounded-full text-[0.8rem] font-medium text-secondary">
             {product.badge}
           </div>
         )}

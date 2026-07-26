@@ -1,15 +1,16 @@
+import { Motorbike, Store, Truck } from 'lucide-react';
 import React from 'react';
 
 export const Delivery = () => {
   return (
-    <section className="py-20 px-8 bg-background/70 border-b border-border">
+    <section className="py-20 px-8 bg-border/40 border-t border-border">
       <div className="max-w-250 mx-auto">
         <h2 className="text-center text-4xl mb-16 font-serif font-bold text-secondary">Getting Your Treats</h2>
         
-        <div className="grid grid-cols-3 max-md:grid-cols-1 gap-12 text-center">
+        <div className="grid grid-cols-3 max-md:grid-cols-1 gap-12 text-center font-sans">
           <div className="flex flex-col items-center">
-            <div className="w-16 h-16 rounded-full bg-white border border-border flex items-center justify-center text-2xl mb-6">
-              🏪
+            <div className="w-16 h-16 rounded-full bg-border text-secondary border border-border flex items-center justify-center text-2xl mb-6">
+              <Store/>
             </div>
             <h3 className="font-sans text-[1.1rem] mb-3 font-bold text-secondary">Self Pickup</h3>
             <p className="text-muted text-[0.9rem] leading-relaxed">
@@ -18,8 +19,8 @@ export const Delivery = () => {
           </div>
           
           <div className="flex flex-col items-center">
-            <div className="w-16 h-16 rounded-full bg-white border border-border flex items-center justify-center text-2xl mb-6">
-              🛵
+            <div className="w-16 h-16 rounded-full bg-border text-secondary border border-border flex items-center justify-center text-2xl mb-6">
+              <Motorbike/>
             </div>
             <h3 className="font-sans text-[1.1rem] mb-3 font-bold text-secondary">Island Delivery</h3>
             <p className="text-muted text-[0.9rem] leading-relaxed">
@@ -28,8 +29,8 @@ export const Delivery = () => {
           </div>
           
           <div className="flex flex-col items-center">
-            <div className="w-16 h-16 rounded-full bg-white border border-border flex items-center justify-center text-2xl mb-6">
-              🚚
+            <div className="w-16 h-16 rounded-full bg-border text-secondary border border-border flex items-center justify-center text-2xl mb-6">
+              <Truck/>
             </div>
             <h3 className="font-sans text-[1.1rem] mb-3 font-bold text-secondary">Mainland Delivery</h3>
             <p className="text-muted text-[0.9rem] leading-relaxed">

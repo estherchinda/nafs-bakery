@@ -1,10 +1,11 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { Mail, MapPin, Phone } from 'lucide-react';
 
 export const Footer = () => {
   return (
-    <footer className="bg-background pt-16 pb-8 px-8 border-t border-border">
+    <footer className="bg-overlay font-sans pt-16 pb-8 px-8 border-t border-border">
       <div className="max-w-300 mx-auto">
         <div className="grid grid-cols-[2fr_1fr_1.5fr_1fr] max-lg:grid-cols-2 max-sm:grid-cols-1 gap-12 mb-16">
           
@@ -21,7 +22,7 @@ export const Footer = () => {
                 <Image src="/icons/instagram.svg" alt="Instagram" width={20} height={20} />
               </button>
               <button className="w-9 h-9 rounded-full border-none bg-black/5 flex items-center justify-center cursor-pointer transition-colors duration-200 hover:bg-black/10">
-                <Image src="/globe.svg" alt="Website" width={20} height={20} />
+                <Image src="/icons/whatsapp.svg" alt="Website" width={20} height={20} />
               </button>
             </div>
           </div>
@@ -40,15 +41,15 @@ export const Footer = () => {
             <h4 className="font-sans text-base font-bold text-secondary mb-6">Contact Us</h4>
             <ul className="flex flex-col gap-4">
               <li className="flex items-start gap-3 text-muted text-[0.9rem]">
-                <span>📞</span>
+                <Phone/>
                 <span>+234 812 345 6789</span>
               </li>
               <li className="flex items-start gap-3 text-muted text-[0.9rem]">
-                <span>✉️</span>
+                <Mail/>
                 <span>hello@nafsbakery.com</span>
               </li>
               <li className="flex items-start gap-3 text-muted text-[0.9rem]">
-                <span>📍</span>
+                <MapPin/>
                 <span>12B Admiralty Way, Lekki Phase 1, Lagos</span>
               </li>
             </ul>
@@ -75,7 +76,7 @@ export const Footer = () => {
         </div>
         
         <div className="flex justify-between items-center pt-8 border-t border-border text-muted text-[0.8rem] max-sm:flex-col max-sm:gap-4 max-sm:text-center">
-          <p>© 2024 Nafs Bakery Artisanal Treats & Custom Cakes.</p>
+          <p>© 2026 Esther Chinda.</p>
           <div className="flex gap-6">
             <Link href="#" className="hover:text-secondary transition-colors duration-200">Privacy Policy</Link>
             <Link href="#" className="hover:text-secondary transition-colors duration-200">Terms of Service</Link>

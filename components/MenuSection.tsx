@@ -11,7 +11,7 @@ const PRODUCTS: Product[] = [
     title: 'Vanilla Birthday Cake',
     description: 'Signature moist sponge with organic vanilla bean.',
     price: '₦25,000+',
-    image: '/images/vanilla-birthday-cake.png',
+    image: '/images/vanilla-birthday-cake.jpg',
     badge: 'Best Seller',
     size: 'large'
   },
@@ -20,21 +20,21 @@ const PRODUCTS: Product[] = [
     title: 'Red Velvet Classic',
     description: 'Tangy cream cheese frosting.',
     price: '₦18,000',
-    image: '/images/red-velvet.png'
+    image: '/images/red-velvet.jpg'
   },
   {
     id: '3',
     title: 'Cupcake Box',
     description: 'Dozen assorted flavors.',
     price: '₦12,000',
-    image: '/images/cupcake.png'
+    image: '/images/cupcake.jpg'
   },
   {
     id: '4',
     title: 'Party Small Chops Tray',
     description: 'Perfect for sharing with up to 10 people.',
     price: '₦15,000',
-    image: '/images/party-tray.png',
+    image: '/images/small-chops.jpg',
     size: 'large'
   }
 ];

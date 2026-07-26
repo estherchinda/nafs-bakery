@@ -3,6 +3,7 @@
 @theme {
   --color-background: #FDF9E6;
   --color-foreground: #4A3A3B;
+  --color-overlay: #FEFCCF;
   --color-primary: #F3C4D1;
   --color-primary-hover: #E7B0BE;
   --color-secondary: #745B5E;

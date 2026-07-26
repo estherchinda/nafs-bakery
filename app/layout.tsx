@@ -1,6 +1,14 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Lora } from "next/font/google";
 import "./globals.css";
+import { Literata } from 'next/font/google';
+
+export const literata = Literata({
+  subsets: ['latin'],
+  display: 'swap',
+  weight: ['400', '500', '600', '700'], 
+  variable: '--font-literata',
+});
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,7 +38,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} ${lora.variable} h-full antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} ${lora.variable} ${literata.className} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">{children}</body>
     </html>

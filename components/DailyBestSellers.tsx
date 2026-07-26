@@ -1,5 +1,6 @@
 import React from 'react';
 import { SmallProductCard, Product } from './ProductCard';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const BEST_SELLERS: Product[] = [
   {
@@ -7,28 +8,28 @@ const BEST_SELLERS: Product[] = [
     title: 'Glazed Donuts Box',
     description: 'Pack of 6 fresh donuts.',
     price: '',
-    image: '/images/glazed-donuts.png'
+    image: '/images/glazed-donuts.jpg'
   },
   {
     id: '2',
     title: 'Double Choc Cookies',
     description: 'Soft baked every morning.',
     price: '',
-    image: '/images/double-choc.png'
+    image: '/images/choc-chip.jpg'
   },
   {
     id: '3',
     title: 'Macaron Gift Box',
     description: '6 premium French flavors.',
     price: '',
-    image: '/images/macaron.png'
+    image: '/images/macaron.jpg'
   },
   {
     id: '4',
     title: 'Lemon Zest Loaf',
     description: 'Tangy and refreshing.',
     price: '',
-    image: '/images/lemon-zest.png'
+    image: '/images/lemon-zest.jpg'
   }
 ];
 
@@ -38,12 +39,16 @@ export const DailyBestSellers = () => {
       <div className="max-w-300 mx-auto">
         <div className="flex justify-between items-end mb-8">
           <div>
-            <h2 className="text-3xl mb-1 font-serif font-bold text-secondary">Daily Best Sellers</h2>
-            <p className="text-muted text-[0.95rem]">The treats everyone is talking about today.</p>
+            <h2 className="text-3xl mb-1 font-serif font-bold text-black">Daily Best Sellers</h2>
+            <p className="text-secondary text-[0.95rem]">The treats everyone is talking about today.</p>
           </div>
           <div className="flex gap-2">
-            <button className="w-10 h-10 rounded-full border border-border bg-white text-secondary flex items-center justify-center cursor-pointer transition-all duration-200 hover:bg-border">&lt;</button>
-            <button className="w-10 h-10 rounded-full border border-border bg-white text-secondary flex items-center justify-center cursor-pointer transition-all duration-200 hover:bg-border">&gt;</button>
+            <button className="w-10 h-10 rounded-full border border-border bg-white text-secondary flex items-center justify-center cursor-pointer transition-all duration-200 hover:bg-border hover:text-white">
+              <ChevronLeft/>
+            </button>
+            <button className="w-10 h-10 rounded-full border border-border bg-white text-secondary flex items-center justify-center cursor-pointer transition-all duration-200 hover:bg-border hover:text-white">
+              <ChevronRight/>
+            </button>
           </div>
         </div>
         

@@ -1,5 +1,5 @@
 import React from 'react';
-import { SmallProductCard, Product } from '../ProductCard/ProductCard';
+import { SmallProductCard, Product } from './ProductCard';
 
 const BEST_SELLERS: Product[] = [
   {

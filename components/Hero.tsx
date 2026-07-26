@@ -1,6 +1,6 @@
-import React from 'react';
-import Image from 'next/image';
-import { Button } from '../Button/Button';
+import React from "react";
+import Image from "next/image";
+import { Button } from "./Button";
 
 export const Hero = () => {
   return (
@@ -21,18 +21,23 @@ export const Hero = () => {
           Fresh Cakes, Treats, and Celebration Orders
         </h1>
         <p className="text-[1.1rem] text-secondary/90 mb-10 max-w-125">
-          Handcrafted with love using the finest ingredients. Every bite is a journey into artisanal excellence and pure indulgence.
+          Handcrafted with love using the finest ingredients. Every bite is a
+          journey into artisanal excellence and pure indulgence.
         </p>
         <div className="flex flex-col md:flex-row items-start md:items-center gap-4">
           <Button
             variant="primary"
-            icon={<Image src="/icons/whatsapp.svg" alt="WhatsApp" width={20} height={20} />}
-          >
+            icon={
+              <Image
+                src="/icons/whatsapp.svg"
+                alt="WhatsApp"
+                width={20}
+                height={20}
+              />
+            }>
             Order on WhatsApp
           </Button>
-          <Button variant="outline">
-            View Menu
-          </Button>
+          <Button variant="outline">View Menu</Button>
         </div>
       </div>
     </section>

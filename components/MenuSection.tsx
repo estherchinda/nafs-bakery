@@ -1,7 +1,7 @@
 'use client';
 import React, { useState } from 'react';
-import { CategoryTabs } from '../CategoryTabs/CategoryTabs';
-import { ProductCard, Product } from '../ProductCard/ProductCard';
+import { CategoryTabs } from './CategoryTabs';
+import { ProductCard, Product } from './ProductCard';
 
 const CATEGORIES = ["Birthday Cakes", "Cupcakes", "Treat Boxes", "Small Chops", "Party Packs"];
 

@@ -1,13 +1,13 @@
-import { Header } from '@/components/Header/Header';
-import { Hero } from '@/components/Hero/Hero';
-import { InfoBar } from '@/components/InfoBar/InfoBar';
-import { MenuSection } from '@/components/MenuSection/MenuSection';
-import { CustomOrder } from '@/components/CustomOrder/CustomOrder';
-import { DailyBestSellers } from '@/components/DailyBestSellers/DailyBestSellers';
-import { About } from '@/components/About/About';
-import { Testimonials } from '@/components/Testimonials/Testimonials';
-import { Delivery } from '@/components/Delivery/Delivery';
-import { Footer } from '@/components/Footer/Footer';
+import { Header } from '@/components/Header';
+import { Hero } from '@/components/Hero';
+import { InfoBar } from '@/components/InfoBar';
+import { MenuSection } from '@/components/MenuSection';
+import { CustomOrder } from '@/components/CustomOrder';
+import { DailyBestSellers } from '@/components/DailyBestSellers';
+import { About } from '@/components/About';
+import { Testimonials } from '@/components/Testimonials';
+import { Delivery } from '@/components/Delivery';
+import { Footer } from '@/components/Footer';
 
 export default function Home() {
   return (

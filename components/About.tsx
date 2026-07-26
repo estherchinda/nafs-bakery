@@ -6,7 +6,7 @@ export const About = () => {
   return (
     <section className="py-16 md:py-24 px-4 md:px-8 bg-overlay" id="about">
       <div className="max-w-300 mx-auto grid grid-cols-2 max-lg:grid-cols-1 gap-16 items-center">
-        <div className="relative w-full aspect-4/5 max-lg:aspect-video rounded-3xl overflow-hidden">
+        <div className="relative w-full hidden md:block aspect-4/5 max-lg:aspect-video rounded-3xl overflow-hidden">
           <Image 
             src="/images/about-section.jpg" 
             alt="Baker decorating cake" 

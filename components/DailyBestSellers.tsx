@@ -1,4 +1,6 @@
-import React from 'react';
+"use client";
+
+import React, { useRef } from 'react';
 import { SmallProductCard, Product } from './ProductCard';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
@@ -34,6 +36,18 @@ const BEST_SELLERS: Product[] = [
 ];
 
 export const DailyBestSellers = () => {
+  const scrollContainerRef = useRef<HTMLDivElement>(null);
+
+  const scroll = (direction: 'left' | 'right') => {
+    if (scrollContainerRef.current) {
+      const container = scrollContainerRef.current;
+      const firstChild = container.firstElementChild as HTMLElement;
+      // Scroll by one item's width + the gap (gap-6 is 24px)
+      const scrollAmount = firstChild ? firstChild.offsetWidth + 24 : container.clientWidth / 2;
+      container.scrollBy({ left: direction === 'left' ? -scrollAmount : scrollAmount, behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className="py-12 md:py-16 px-4 md:px-8 bg-background/50" id="bestsellers">
       <div className="max-w-300 mx-auto">
@@ -43,18 +57,24 @@ export const DailyBestSellers = () => {
             <p className="text-secondary text-[0.95rem]">The treats everyone is talking about today.</p>
           </div>
           <div className="flex gap-2">
-            <button className="w-10 h-10 rounded-full border border-border bg-white text-secondary flex items-center justify-center cursor-pointer transition-all duration-200 hover:bg-border hover:text-white">
+            <button 
+              onClick={() => scroll('left')}
+              className="w-10 h-10 rounded-full border border-border bg-white text-secondary flex items-center justify-center cursor-pointer transition-all duration-200 hover:bg-border hover:text-white">
               <ChevronLeft/>
             </button>
-            <button className="w-10 h-10 rounded-full border border-border bg-white text-secondary flex items-center justify-center cursor-pointer transition-all duration-200 hover:bg-border hover:text-white">
+            <button 
+              onClick={() => scroll('right')}
+              className="w-10 h-10 rounded-full border border-border bg-white text-secondary flex items-center justify-center cursor-pointer transition-all duration-200 hover:bg-border hover:text-white">
               <ChevronRight/>
             </button>
           </div>
         </div>
         
-        <div className="grid grid-cols-4 max-lg:grid-cols-3 max-md:grid-cols-2 max-sm:flex max-sm:overflow-x-auto max-sm:snap-x max-sm:snap-mandatory gap-6 pb-4">
+        <div 
+          ref={scrollContainerRef}
+          className="flex overflow-x-auto snap-x snap-mandatory gap-6 pb-4 scroll-smooth [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
           {BEST_SELLERS.map(product => (
-            <div key={product.id} className="max-sm:min-w-[80%] max-sm:snap-start">
+            <div key={product.id} className="w-[80%] sm:w-[calc(50%-12px)] md:w-[calc(33.333%-16px)] lg:w-[calc(25%-18px)] shrink-0 snap-start">
               <SmallProductCard product={product} />
             </div>
           ))}

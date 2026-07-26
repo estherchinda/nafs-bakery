@@ -96,7 +96,7 @@ export const Footer = () => {
               </li>
               <li className="flex items-start gap-3 text-muted text-[0.9rem]">
                 <MapPin />
-                <span>Apo sunrise plaza, Apo Resettlement, Abuja 900001, Federal Capital Territory</span>
+                <span>Apo sunrise plaza, Apo Resettlement, FCT</span>
               </li>
             </ul>
           </div>

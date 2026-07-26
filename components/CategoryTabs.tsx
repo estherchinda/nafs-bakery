@@ -15,7 +15,7 @@ export const CategoryTabs: React.FC<CategoryTabsProps> = ({ categories, activeCa
             key={category}
             className={`px-6 py-2 rounded-full border bg-transparent text-[0.95rem] font-medium cursor-pointer whitespace-nowrap transition-all duration-200 ${
               activeCategory === category 
-                ? 'bg-border border-border text-secondary' 
+                ? 'bg-white border-border text-secondary' 
                 : 'border-border text-secondary hover:bg-white/50'
             }`}
             onClick={() => onSelectCategory(category)}

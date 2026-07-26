@@ -10,6 +10,7 @@ export interface Product {
   image: string;
   badge?: string;
   size?: "large" | "small";
+  category?: string;
 }
 
 interface ProductCardProps {

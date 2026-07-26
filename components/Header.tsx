@@ -1,12 +1,22 @@
 "use client";
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Menu, X } from 'lucide-react';
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 20);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -17,7 +27,9 @@ export const Header = () => {
   };
 
   return (
-    <header className="w-full py-4 md:py-6 left-0 bg-transparent absolute top-0 z-30">
+    <header className={`w-full left-0 top-0 z-50 transition-all duration-300 ${
+      isScrolled ? 'fixed bg-overlay shadow-sm py-3 md:py-4' : 'absolute bg-transparent py-4 md:py-6'
+    }`}>
       <div className="max-w-300 mx-auto px-4 md:px-8 flex items-center justify-between">
         <Link href={"/"} className="flex items-center gap-3">
           <Image src="/images/logo.png" alt="Nafs Bakery Logo" width={40} height={40} className="rounded" />

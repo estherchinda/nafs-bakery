@@ -5,9 +5,9 @@ import { Mail, MapPin, Phone } from 'lucide-react';
 
 export const Footer = () => {
   return (
-    <footer className="bg-overlay font-sans pt-16 pb-8 px-8 border-t border-border">
+    <footer className="bg-overlay font-sans pt-12 md:pt-16 pb-8 px-4 md:px-8 border-t border-border">
       <div className="max-w-300 mx-auto">
-        <div className="grid grid-cols-[2fr_1fr_1.5fr_1fr] max-lg:grid-cols-2 max-sm:grid-cols-1 gap-12 mb-16">
+        <div className="grid grid-cols-[2fr_1fr_1.5fr_1fr] max-lg:grid-cols-2 max-sm:grid-cols-1 gap-8 md:gap-12 mb-12 md:mb-16">
           
           <div>
             <div className="flex items-center gap-3 mb-6">

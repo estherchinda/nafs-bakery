@@ -43,7 +43,7 @@ export const MenuSection = () => {
   const [activeCategory, setActiveCategory] = useState("Birthday Cakes");
 
   return (
-    <section className="py-8 px-8 pb-16 bg-background" id="menu">
+    <section className="py-12 md:py-8 px-4 md:px-8 pb-16 bg-background" id="menu">
       <div className="max-w-300 mx-auto">
         <CategoryTabs 
           categories={CATEGORIES} 

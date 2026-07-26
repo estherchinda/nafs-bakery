@@ -3,9 +3,9 @@ import React from 'react';
 
 export const Delivery = () => {
   return (
-    <section className="py-20 px-8 bg-border/40 border-t border-border">
+    <section className="py-16 md:py-20 px-4 md:px-8 bg-border/40 border-t border-border">
       <div className="max-w-250 mx-auto">
-        <h2 className="text-center text-4xl mb-16 font-serif font-bold text-secondary">Getting Your Treats</h2>
+        <h2 className="text-center text-3xl md:text-4xl mb-12 md:mb-16 font-serif font-bold text-secondary">Getting Your Treats</h2>
         
         <div className="grid grid-cols-3 max-md:grid-cols-1 gap-12 text-center font-sans">
           <div className="flex flex-col items-center">

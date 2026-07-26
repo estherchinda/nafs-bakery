@@ -35,11 +35,11 @@ const BEST_SELLERS: Product[] = [
 
 export const DailyBestSellers = () => {
   return (
-    <section className="py-16 px-8 bg-background/50" id="bestsellers">
+    <section className="py-12 md:py-16 px-4 md:px-8 bg-background/50" id="bestsellers">
       <div className="max-w-300 mx-auto">
         <div className="flex justify-between items-end mb-8">
           <div>
-            <h2 className="text-3xl mb-1 font-serif font-bold text-black">Daily Best Sellers</h2>
+            <h2 className="text-2xl md:text-3xl mb-1 font-serif font-bold text-black">Daily Best Sellers</h2>
             <p className="text-secondary text-[0.95rem]">The treats everyone is talking about today.</p>
           </div>
           <div className="flex gap-2">

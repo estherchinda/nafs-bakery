@@ -23,13 +23,13 @@ const REVIEWS = [
 
 export const Testimonials = () => {
   return (
-    <section className="py-20 px-8 bg-overlay/80">
+    <section className="py-16 md:py-20 px-4 md:px-8 bg-overlay/80">
       <div className="max-w-300 mx-auto">
-        <h2 className="text-center text-4xl mb-12 font-serif font-bold text-secondary">Sweet Words from Clients</h2>
+        <h2 className="text-center text-3xl md:text-4xl mb-10 md:mb-12 font-serif font-bold text-secondary">Sweet Words from Clients</h2>
         
         <div className="grid grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1 gap-8">
           {REVIEWS.map(review => (
-            <div key={review.id} className="bg-overlay p-10 rounded-2xl border border-border font-sans shadow-[0_4px_20px_rgba(0,0,0,0.02)] flex flex-col">
+            <div key={review.id} className="bg-overlay p-6 md:p-10 rounded-2xl border border-border font-sans shadow-[0_4px_20px_rgba(0,0,0,0.02)] flex flex-col">
               <div className="font-serif text-[4rem] text-primary leading-[0.5] mb-4">&quot;</div>
               <p className="italic text-secondary text-[0.95rem] leading-relaxed flex-1 mb-8">{review.text}</p>
               <div className="flex items-center gap-4">

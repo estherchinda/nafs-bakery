@@ -5,13 +5,13 @@ import { Cake } from "lucide-react";
 export const CustomOrder = () => {
   return (
     <section
-      className="py-16 px-8 bg-[#F8C8DC]/20 flex justify-center"
+      className="py-12 md:py-16 px-4 md:px-8 bg-[#F8C8DC]/20 flex justify-center"
       id="custom-orders">
       <div className="w-full max-w-200">
         <div className="bg-overlay border-2 border-dashed border-[#E9C349] rounded-2xl p-12 relative max-md:p-8 max-sm:p-4">
           <div className="flex justify-between items-start mb-8">
             <div className="text-center flex-1">
-              <h2 className="text-3xl mb-2 font-serif font-bold text-secondary">
+              <h2 className="text-2xl md:text-3xl mb-2 font-serif font-bold text-secondary">
                 Need a Custom cake?
               </h2>
               <p className="text-[#4F4448] text-sm max-w-100 mx-auto font-sans">

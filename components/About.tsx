@@ -4,7 +4,7 @@ import { BadgeCheck, Cannabis, Palette } from 'lucide-react';
 
 export const About = () => {
   return (
-    <section className="py-24 px-8 bg-overlay" id="about">
+    <section className="py-16 md:py-24 px-4 md:px-8 bg-overlay" id="about">
       <div className="max-w-300 mx-auto grid grid-cols-2 max-lg:grid-cols-1 gap-16 items-center">
         <div className="relative w-full aspect-4/5 max-lg:aspect-video rounded-3xl overflow-hidden">
           <Image 
@@ -19,7 +19,7 @@ export const About = () => {
         </div>
         
         <div className="flex flex-col">
-          <h2 className="text-4xl mb-10 font-serif font-bold text-secondary">Why Choose Nafs?</h2>
+          <h2 className="text-3xl md:text-4xl mb-8 md:mb-10 font-serif font-bold text-secondary">Why Choose Nafs?</h2>
           
           <div className="flex flex-col gap-8">
             <div className="flex gap-6 items-start">

@@ -98,7 +98,7 @@ const PRODUCTS: Product[] = [
 ];
 
 export const MenuSection = () => {
-  const [activeCategory, setActiveCategory] = useState("Birthday Cakes");
+  const [activeCategory, setActiveCategory] = useState("Party Packs");
 
   return (
     <section className="py-12 md:py-8 px-4 md:px-8 pb-16 bg-background" id="menu">

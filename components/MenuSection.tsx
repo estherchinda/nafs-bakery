@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { CategoryTabs } from './CategoryTabs';
 import { ProductCard, Product } from './ProductCard';
 
-const CATEGORIES = ["Cupcakes", "Treat Boxes", "Small Chops", "Party Packs", "Birthday Cakes"];
+const CATEGORIES = ["Party Packs", "Cupcakes", "Treat Boxes", "Small Chops", "Birthday Cakes"];
 
 const PRODUCTS: Product[] = [
   {
@@ -51,7 +51,7 @@ const PRODUCTS: Product[] = [
   },
   {
     id: '6',
-    title: 'Kids Birthday Party Pack',
+    title: 'Birthday Food Pack',
     description: 'Complete pack with mini cakes, cookies, and small chops.',
     price: '₦35,000',
     image: '/images/party-pack1.jpg',

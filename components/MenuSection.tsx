@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { CategoryTabs } from './CategoryTabs';
 import { ProductCard, Product } from './ProductCard';
 
-const CATEGORIES = ["Birthday Cakes", "Cupcakes", "Treat Boxes", "Small Chops", "Party Packs"];
+const CATEGORIES = ["Cupcakes", "Treat Boxes", "Small Chops", "Party Packs", "Birthday Cakes"];
 
 const PRODUCTS: Product[] = [
   {
@@ -56,7 +56,8 @@ const PRODUCTS: Product[] = [
     price: '₦35,000',
     image: '/images/party-pack1.jpg',
     size: 'large',
-    category: 'Party Packs'
+    category: 'Party Packs',
+    badge: 'Best Seller',
   },
   {
     id: '7',
